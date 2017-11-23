@@ -12,9 +12,11 @@ namespace Strings_and_character_encodings
         {
             List<Book> books = new List<Book>();
             System.IO.StreamReader reader = new System.IO.StreamReader(filePath);
-            string[] line = reader.ReadLine().Split(',');
-            while((line = reader.ReadLine().Split(',')) != null)
+            string curLine = reader.ReadLine();
+            string[] line;
+            while((curLine = reader.ReadLine()) != null)
             {
+                line = curLine.Split(',');
                 books.Add(new Book(line[0],line[1],line[2]));
             }
             return books;
