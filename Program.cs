@@ -10,38 +10,22 @@ namespace Strings_and_character_encodings
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(" 28 Nov 2008 ".Length);
             CSVParser csvParser = new CSVParser();
             List<Book> books = csvParser.GetBooks("books.csv");
-            Program program = new Program();
-            program.DisplayData(books);
-        }        
-        private void DisplayData(List<Book> books)
-        {
-            Console.WriteLine("| Pub Date    |                      Title | Authors                         |");
-            Console.WriteLine("|============================================================================|");
-            foreach(Book book in books)
-            {
-                Console.WriteLine(GetLine(book));
-            }
+            DisplayData(books);
             Console.ReadKey();
-        }
-        private String GetLine(Book book)
+        }        
+        static void DisplayData(List<Book> books)
         {
-            string date = string.Format("{0:dd MMM yyyy}", book.Date).PadRight(12);
-            string title = TruncateString(book.Title, 27).PadLeft(27);
-            string authors = TruncateString(String.Join("&", book.Authors), 31).PadRight(31);
-            String line = $"| {date}|{title} | {authors}|";
-            return line;
-        }
-        private String TruncateString(String input, int maxLength)
-        {
-            if(input.Length <= maxLength) {
-                return input;
-            }
-            else
+            Table table = new Table();
+            Console.WriteLine("| Pub Date    |                       Title | Authors                         |");
+            Console.WriteLine("|=============================================================================|");
+            foreach (Book book in books)
             {
-                return input.Substring(0, maxLength - 3) + "...";
+                Console.WriteLine(table.GetLine(book));
             }
         }
+        
     }
 }

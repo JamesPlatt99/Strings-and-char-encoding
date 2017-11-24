@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Strings_and_character_encodings
 {
-    class Book
+    public class Book
     {
         public DateTime Date { get; set; }
         public String Title { get; set; }

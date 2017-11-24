@@ -5,3 +5,9 @@ C:\LocalProjects\Training\AptemProjects\Strings and character encodings\obj\Debu
 C:\LocalProjects\Training\AptemProjects\Strings and character encodings\obj\Debug\Strings and character encodings.csproj.CoreCompileInputs.cache
 C:\LocalProjects\Training\AptemProjects\Strings and character encodings\obj\Debug\Strings and character encodings.exe
 C:\LocalProjects\Training\AptemProjects\Strings and character encodings\obj\Debug\Strings and character encodings.pdb
+C:\localprojects\training\Strings-and-char-encoding\bin\Debug\Strings and character encodings.exe.config
+C:\localprojects\training\Strings-and-char-encoding\bin\Debug\Strings and character encodings.exe
+C:\localprojects\training\Strings-and-char-encoding\bin\Debug\Strings and character encodings.pdb
+C:\localprojects\training\Strings-and-char-encoding\obj\Debug\Strings and character encodings.csprojResolveAssemblyReference.cache
+C:\localprojects\training\Strings-and-char-encoding\obj\Debug\Strings and character encodings.exe
+C:\localprojects\training\Strings-and-char-encoding\obj\Debug\Strings and character encodings.pdb
